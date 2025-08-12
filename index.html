@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfa Fitness - Unleash Your Potential</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-950 text-gray-50">
+    <header class="bg-gray-900 sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#home" class="text-3xl font-bold text-red-600 tracking-wide transition duration-300 hover:text-red-500">
+                Alfa Fitness
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-red-500 transition duration-300 font-medium">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-red-500 transition duration-300 font-medium">About Us</a>
+                <a href="#classes" class="text-gray-300 hover:text-red-500 transition duration-300 font-medium">Classes</a>
+                <a href="#trainers" class="text-gray-300 hover:text-red-500 transition duration-300 font-medium">Trainers</a>
+                <a href="#pricing" class="text-gray-300 hover:text-red-500 transition duration-300 font-medium">Pricing</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-red-500 transition duration-300 font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-300 hover:text-red-500 transition duration-300 font-medium">Contact</a>
+                <a href="#my-bookings" id="nav-my-bookings" class="text-gray-300 hover:text-red-500 transition duration-300 font-medium hidden">My Bookings</a>
+                <a href="#" id="nav-auth" class="text-red-500 hover:text-red-400 transition duration-300 font-bold">Login / Register</a>
+                <button id="nav-logout" class="hidden text-red-500 hover:text-red-400 transition duration-300 font-bold">Logout</button>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-4 px-6 space-y-4 text-center">
+            <a href="#home" class="block text-gray-300 hover:text-red-500 transition duration-300 font-medium">Home</a>
+            <a href="#about" class="block text-gray-300 hover:text-red-500 transition duration-300 font-medium">About Us</a>
+            <a href="#classes" class="block text-gray-300 hover:text-red-500 transition duration-300 font-medium">Classes</a>
+            <a href="#trainers" class="block text-gray-300 hover:text-red-500 transition duration-300 font-medium">Trainers</a>
+            <a href="#pricing" class="block text-gray-300 hover:text-red-500 transition duration-300 font-medium">Pricing</a>
+            <a href="#testimonials" class="block text-gray-300 hover:text-red-500 transition duration-300 font-medium">Testimonials</a>
+            <a href="#contact" class="block text-gray-300 hover:text-red-500 transition duration-300 font-medium">Contact</a>
+            <a href="#my-bookings" id="mobile-nav-my-bookings" class="block text-gray-300 hover:text-red-500 transition duration-300 font-medium hidden">My Bookings</a>
+            <a href="#" id="mobile-nav-auth" class="block text-red-500 hover:text-red-400 transition duration-300 font-bold">Login / Register</a>
+            <button id="mobile-nav-logout" class="hidden w-full py-2 text-red-500 hover:text-red-400 transition duration-300 font-bold">Logout</button>
+        </div>
+    </header>
+
+    <section id="home" class="relative h-[600px] md:h-[700px] bg-cover bg-center flex items-center justify-center text-center p-6"
+        style="background-image: url('homeimage.jpg');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-white drop-shadow-lg">
+                Unleash Your Potential at <span class="text-red-500">Alfa Fitness</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                Ignite your journey to a stronger, healthier you with our expert trainers, diverse classes, and state-of-the-art facilities.
+            </p>
+            <a href="#pricing" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                Join Now
+            </a>
+            <a href="#classes" class="inline-block bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full text-lg ml-4 transition duration-300 transform hover:scale-105 shadow-lg">
+                View Classes
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="main image.jpg" alt="About Alfa Fitness" class="rounded-lg shadow-xl object-cover w-full h-auto">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
+                    About <span class="text-red-500">Alfa Fitness</span>
+                </h2>
+                <p class="text-lg text-gray-300 mb-4">
+                    At Alfa Fitness, we believe in empowering individuals to achieve their fitness goals, no matter how big or small. Our mission is to provide a welcoming and motivating environment where everyone feels inspired to push their limits.
+                </p>
+                <p class="text-lg text-gray-300">
+                    We offer a wide range of classes, cutting-edge equipment, and a team of passionate, certified trainers dedicated to guiding you every step of the way. Join our community and discover the difference commitment makes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="classes" class="py-16 md:py-24 bg-gray-950">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Our <span class="text-red-500">Classes</span></h2>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="filter-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-6 rounded-full transition duration-300" data-category="all">All</button>
+                <button class="filter-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-6 rounded-full transition duration-300" data-category="cardio">Cardio</button>
+                <button class="filter-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-6 rounded-full transition duration-300" data-category="strength">Strength</button>
+                <button class="filter-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-6 rounded-full transition duration-300" data-category="flexibility">Flexibility</button>
+                <button class="filter-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-6 rounded-full transition duration-300" data-category="dance">Dance</button>
+            </div>
+
+            <div id="classes-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </div>
+    </section>
+
+    <section id="trainers" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Meet Our <span class="text-red-500">Trainers</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8 text-center flex flex-col items-center transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/150x150/e44d26/fff?text=Trainer+1" alt="Trainer Name" class="w-32 h-32 rounded-full mb-6 border-4 border-red-600 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">Alex "The Beast" Stone</h3>
+                    <p class="text-red-400 font-medium mb-4">CrossFit Coach & Strength Specialist</p>
+                    <p class="text-gray-300">With over 10 years of experience, Alex is passionate about functional fitness and helping clients build raw strength and endurance. He believes consistency is key!</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8 text-center flex flex-col items-center transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/150x150/e44d26/fff?text=Trainer+2" alt="Trainer Name" class="w-32 h-32 rounded-full mb-6 border-4 border-red-600 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">Maya "Zen" Sharma</h3>
+                    <p class="text-red-400 font-medium mb-4">Certified Yoga & Pilates Instructor</p>
+                    <p class="text-gray-300">Maya brings tranquility and focus to her classes, specializing in Vinyasa flow and Pilates. She helps clients improve flexibility, balance, and mental well-being.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8 text-center flex flex-col items-center transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/150x150/e44d26/fff?text=Trainer+3" alt="Trainer Name" class="w-32 h-32 rounded-full mb-6 border-4 border-red-600 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">Chris "The Rocket" Lee</h3>
+                    <p class="text-red-400 font-medium mb-4">High-Intensity Cardio & HIIT Coach</p>
+                    <p class="text-gray-300">Chris is an energy powerhouse, leading dynamic HIIT and cardio sessions designed to burn fat, boost metabolism, and push your limits in a fun way!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-16 md:py-24 bg-gray-950">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Our <span class="text-red-500">Membership Plans</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8 text-center border-t-4 border-red-600 transform hover:scale-105 transition duration-300">
+                    <h3 class="text-3xl font-bold mb-4 text-red-500">Basic</h3>
+                    <p class="text-5xl font-extrabold mb-6 text-white">$49<span class="text-xl text-gray-400">/month</span></p>
+                    <ul class="text-gray-300 text-lg mb-8 space-y-3">
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-green-500 mr-2"><polyline points="20 6 9 17 4 12"/></svg> Access to Gym Equipment</li>
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-green-500 mr-2"><polyline points="20 6 9 17 4 12"/></svg> Locker Room Access</li>
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x text-gray-500 mr-2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg> No Class Access</li>
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x text-gray-500 mr-2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg> No Personal Training</li>
+                    </ul>
+                    <button class="choose-plan-btn bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                        Choose Basic
+                    </button>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8 text-center border-t-4 border-red-600 transform hover:scale-105 transition duration-300">
+                    <h3 class="text-3xl font-bold mb-4 text-red-500">Premium</h3>
+                    <p class="text-5xl font-extrabold mb-6 text-white">$79<span class="text-xl text-gray-400">/month</span></p>
+                    <ul class="text-gray-300 text-lg mb-8 space-y-3">
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-green-500 mr-2"><polyline points="20 6 9 17 4 12"/></svg> All Basic Features</li>
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-green-500 mr-2"><polyline points="20 6 9 17 4 12"/></svg> Unlimited Class Access</li>
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-green-500 mr-2"><polyline points="20 6 9 17 4 12"/></svg> Nutritional Guidance</li>
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x text-gray-500 mr-2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg> No Personal Training</li>
+                    </ul>
+                    <button class="choose-plan-btn bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                        Choose Premium
+                    </button>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8 text-center border-t-4 border-red-600 transform hover:scale-105 transition duration-300">
+                    <h3 class="text-3xl font-bold mb-4 text-red-500">Elite</h3>
+                    <p class="text-5xl font-extrabold mb-6 text-white">$129<span class="text-xl text-gray-400">/month</span></p>
+                    <ul class="text-gray-300 text-lg mb-8 space-y-3">
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-green-500 mr-2"><polyline points="20 6 9 17 4 12"/></svg> All Premium Features</li>
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-green-500 mr-2"><polyline points="20 6 9 17 4 12"/></svg> 4 Personal Training Sessions/Month</li>
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-green-500 mr-2"><polyline points="20 6 9 17 4 12"/></svg> Access to Workshops</li>
+                        <li class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-green-500 mr-2"><polyline points="20 6 9 17 4 12"/></svg> Priority Booking</li>
+                    </ul>
+                    <button class="choose-plan-btn bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                        Choose Elite
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-white">What Our Clients <span class="text-red-500">Say</span></h2>
+            <div class="relative max-w-4xl mx-auto">
+                <div id="testimonial-carousel" class="overflow-hidden relative rounded-lg shadow-xl bg-gray-800 p-8">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel-inner">
+                        </div>
+                </div>
+                <button id="prev-testimonial" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-red-600 text-white p-3 rounded-full shadow-lg ml-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button id="next-testimonial" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-red-600 text-white p-3 rounded-full shadow-lg mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="my-bookings" class="py-16 md:py-24 bg-gray-950 hidden">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-white">My <span class="text-red-500">Bookings</span></h2>
+            <div id="my-bookings-list" class="bg-gray-800 rounded-lg shadow-xl p-8 max-w-2xl mx-auto">
+                <p class="text-gray-400 text-center" id="no-bookings-message">You don't have any active bookings yet. Book a class!</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Get In <span class="text-red-500">Touch</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-white">Send Us a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 text-lg font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white" placeholder="Your Name" required>
+                            <p class="text-red-400 text-sm mt-1 hidden" id="name-error">Name is required.</p>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 text-lg font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white" placeholder="your@example.com" required>
+                            <p class="text-red-400 text-sm mt-1 hidden" id="email-error">Please enter a valid email.</p>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-300 text-lg font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white" placeholder="Subject of your message" required>
+                            <p class="text-red-400 text-sm mt-1 hidden" id="subject-error">Subject is required.</p>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-300 text-lg font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white" placeholder="Your message..." required></textarea>
+                            <p class="text-red-400 text-sm mt-1 hidden" id="message-error">Message is required.</p>
+                        </div>
+                        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-xl p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-white">Find Us Here</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-red-500 mr-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2 3.22 2 2 0 0 1 4.07 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <p class="text-lg text-gray-300">+91 8146841617</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-red-500 mr-4"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <p class="text-lg text-gray-300">ns6589442@gmail.com</p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-red-500 mr-4 mt-1"><path d="M12 12c-3.31 0-6 2.69-6 6s6 6 6 6 6-2.69 6-6-2.69-6-6-6Z"/><path d="M12 12V2"/></svg>
+                            <p class="text-lg text-gray-300">
+                                Alfa Fitness, Gym, <br> Nayagaon, Punjab 160001, India
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-8 rounded-lg overflow-hidden shadow-lg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.578051790473!2d76.84587321509938!3d30.73977598163013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fe66f0d1a4981%3A0xc3d1d7b3e0c0b7d!2sNayagaon%2C%20Punjab!5e0!3m2!1sen!2sin!4v1678912345678!5m2!1sen!2sin"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-8 text-center text-gray-400 text-sm">
+        <div class="container mx-auto px-6">
+            <p>© 2025 Alfa Fitness. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-red-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" class="hover:text-red-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+                <a href="#" class="hover:text-red-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17-19 11.6 1.1.8 2.5 1.4 4 1.4 5 0 10-4 10-10V7c1.4-.8 2.5-2 3-3Z"/></svg>
+                </a>
+                <a href="#" class="hover:text-red-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-auth-modal">×</span>
+            <h3 class="text-3xl font-bold text-white mb-6 text-center" id="auth-modal-title">Login</h3>
+
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label for="login-username" class="block text-gray-300 text-lg font-medium mb-2">Username</label>
+                    <input type="text" id="login-username" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white" required>
+                </div>
+                <div>
+                    <label for="login-password" class="block text-gray-300 text-lg font-medium mb-2">Password</label>
+                    <input type="password" id="login-password" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white" required>
+                </div>
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">Login</button>
+                <p class="text-gray-400 text-center mt-4">Don't have an account? <a href="#" id="show-register" class="text-red-500 hover:underline">Register here</a></p>
+                <p id="login-error-message" class="text-red-400 text-center hidden"></p>
+            </form>
+
+            <form id="register-form" class="space-y-4 hidden">
+                <div>
+                    <label for="register-username" class="block text-gray-300 text-lg font-medium mb-2">Username</label>
+                    <input type="text" id="register-username" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white" required>
+                </div>
+                <div>
+                    <label for="register-password" class="block text-gray-300 text-lg font-medium mb-2">Password</label>
+                    <input type="password" id="register-password" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white" required>
+                </div>
+                <div>
+                    <label for="register-confirm-password" class="block text-gray-300 text-lg font-medium mb-2">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white" required>
+                </div>
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">Register</button>
+                <p class="text-gray-400 text-center mt-4">Already have an account? <a href="#" id="show-login" class="text-red-500 hover:underline">Login here</a></p>
+                <p id="register-error-message" class="text-red-400 text-center hidden"></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-message-modal">×</span>
+            <h3 class="text-2xl font-bold text-white mb-4" id="message-modal-title"></h3>
+            <p class="text-gray-300" id="message-modal-body"></p>
+            <button id="message-modal-close-btn" class="mt-6 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 transform hover:scale-105">Okay</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
